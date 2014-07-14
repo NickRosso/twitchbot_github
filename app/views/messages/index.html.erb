@@ -1,0 +1,33 @@
+<head><meta http-equiv="refresh" content="8"> </head>
+
+<table>
+  <td class = "channel"><%= link_to image_tag( "twitch.png", alt: "twitch.tv" ), 'http://twitch.tv'%></th>
+  <td class ="channel"><%= @channel +"'s Stream"%></th>
+</table>
+<table>
+  <thead>
+    <tr>
+      <th class = "th">ID</th>
+      <th class = "th">Username</th>
+      <th class = "th">Message</th>
+      <th class = "th">Time</th>
+
+      
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @messages.each do |message| %>
+      <tr>
+        <td class="id"><%= message.id %></td>
+        <td class="username"><%= message.username %></td>
+        <td class="content"><%= message.content %></td>
+        <td class="date"><%= message.created_at %></td>
+      </tr>
+    <% end %>
+
+  </tbody>
+</table >
+
+<br>
+

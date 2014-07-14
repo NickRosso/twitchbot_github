@@ -1,0 +1,54 @@
+body {
+  background-color: #424242;
+  color: white;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+.th {
+  background-color: #151515;
+}
+tr {
+  background-color: #2E2E2E;
+}
+
+.id {
+  color: white;
+  text-align: center;
+}
+
+.date{
+  color: white;
+  text-align: center;
+}
+
+.content {
+  white-space: nowrap;
+  width: 70%;
+
+}
+
+.username {
+  color: white;
+
+}
+
+tr:nth-child(even) {
+  background-color: #151515;
+}
+
+.channel {
+  font-family: helvetica;
+  font-size: 50px;
+  height: 200px;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+
+  background-color: #424242;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+
+
